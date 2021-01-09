@@ -29,6 +29,8 @@ namespace OMDb
 		public string Production { get; set; }
 		public string Website { get; set; }
 		public bool Response { get; set; }
+		public string Error { get; set; }
+
 	}
 
 	public class Rating
