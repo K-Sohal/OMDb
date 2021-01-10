@@ -3,11 +3,11 @@ using Newtonsoft.Json;
 
 namespace OMDb
 {
-	public class OMDbService
+	public class Service
 	{
 		public OMDbCallManager OMDbCallManager { get; set; } = new OMDbCallManager();
 
-		public MovieDTO MovieDTO { get; set; } = new MovieDTO();
+		public DTO DTO { get; set; } = new DTO();
 
 		public string Movie { get; set; }
 
@@ -17,18 +17,16 @@ namespace OMDb
 		{
 			Json_Movie = JsonConvert.DeserializeObject<JObject>(Movie);
 
-			MovieDTO.DeserializeRates(Movie);
+			DTO.DeserializeRates(Movie);
 		}
 
-		public OMDbService() {}
-
-		public OMDbService(string iMDbID)
+		public Service(string iMDbID)
 		{
 			Movie = OMDbCallManager.GetMovieByID(iMDbID);
 
 			Deserialize();
 		}
-		public OMDbService(string movieTitle, string year, string season, string episode, string type)
+		public Service(string movieTitle, string year, string season, string episode, string type)
 		{
 			Movie = OMDbCallManager.GetMovieByTitle(movieTitle, year, season, episode, type);
 

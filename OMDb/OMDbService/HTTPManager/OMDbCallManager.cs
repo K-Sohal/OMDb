@@ -10,18 +10,18 @@ namespace OMDb
 
 		public OMDbCallManager()
 		{
-			_client = new RestClient(OMDbConfigReader.BaseUrl);
+			_client = new RestClient(ConfigReader.BaseUrl);
 		}
 
 		public string GetMovieByTitle(string movieTitle, string year, string season, string episode, string type)
 		{
-			var request = new RestRequest(OMDbConfigReader.ApiUrlMod + OMDbConfigReader.ApiKey + "&t=" + movieTitle + "&y=" + year + "&Season=" + season + "&Episode=" + episode + "&type=" + type);
+			var request = new RestRequest(ConfigReader.ApiUrlMod + ConfigReader.ApiKey + "&t=" + movieTitle + "&y=" + year + "&Season=" + season + "&Episode=" + episode + "&type=" + type);
 			return _client.Execute(request, Method.GET).Content;
 		}
 
 		public string GetMovieByID(string iMDbID)
 		{
-			var request = new RestRequest(OMDbConfigReader.ApiUrlMod + OMDbConfigReader.ApiKey + "&i=" + iMDbID);
+			var request = new RestRequest(ConfigReader.ApiUrlMod + ConfigReader.ApiKey + "&i=" + iMDbID);
 			return _client.Execute(request, Method.GET).Content;
 		}
 

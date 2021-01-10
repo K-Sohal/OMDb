@@ -3,7 +3,7 @@ using System.Configuration;
 
 namespace OMDb
 {
-	public static class OMDbConfigReader
+	public static class ConfigReader
 	{
 		public static readonly string BaseUrl = ConfigurationManager.AppSettings["base_url"];
 		public static readonly string ApiKey = ConfigurationManager.AppSettings["api_key"];
