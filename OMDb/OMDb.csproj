@@ -83,16 +83,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OMDbService\DataHandler\MovieDTO.cs" />
-    <Compile Include="OMDbService\DataHandler\MovieModel.cs" />
+    <Compile Include="OMDbService\DataHandler\DTO.cs" />
+    <Compile Include="OMDbService\DataHandler\Model.cs" />
     <Compile Include="OMDbService\HTTPManager\OMDbCallManager.cs" />
-    <Compile Include="OMDbConfigReader.cs" />
-    <Compile Include="OMDbService\OMDbService.cs" />
+    <Compile Include="ConfigReader.cs" />
+    <Compile Include="OMDbService\Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\OMDbTests.cs" />
+    <Compile Include="Tests\SearchByID.cs" />
+    <Compile Include="Tests\SearchByTitle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

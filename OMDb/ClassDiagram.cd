@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="OMDb.DTO">
+    <Position X="6.75" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OMDbService\DataHandler\DTO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="movieInformation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMDb.Model">
+    <Position X="10.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAADABAgURQCgIAAAAAAAIQEBEAAQAEAAMgIAA=</HashCode>
+      <FileName>OMDbService\DataHandler\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ratings" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMDb.Rating">
+    <Position X="13.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>OMDbService\DataHandler\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMDb.OMDbCallManager">
+    <Position X="7.5" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAIAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OMDbService\HTTPManager\OMDbCallManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OMDb.Service">
+    <Position X="6.75" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAQAEABAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OMDbService\Service.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DTO" />
+      <Property Name="OMDbCallManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="OMDb.ConfigReader">
+    <Position X="4" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAgEAAAAAAAAAA=</HashCode>
+      <FileName>ConfigReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
