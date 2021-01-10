@@ -5,7 +5,7 @@ The main aim of this project is to create a test framework for a movie informati
 
 ## Class Diagram
 
-![](https://github.com/K-Sohal/OMDb/blob/main/Images/Class-Diagram.png?raw=true "Class Diagram")
+![](https://github.com/K-Sohal/OMDb/blob/main/Images/Class Diagram.png?raw=true "Class Diagram")
 
 ## Usage
 
