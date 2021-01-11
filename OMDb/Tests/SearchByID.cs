@@ -25,6 +25,18 @@ namespace OMDb
 			Assert.That(_invalidMovie.DTO.movieInformation.Error, Is.EqualTo("Incorrect IMDb ID."));
 		}
 
+		[Test]
+		public void ReturnsCorrectTitle()
+		{
+			Assert.That(_movie.DTO.movieInformation.Title, Is.EqualTo("Inception"));
+		}
+
+		[Test]
+		public void ReturnsCorrectYear()
+		{
+			Assert.That(_movie.DTO.movieInformation.Year, Is.EqualTo("2010"));
+		}
+
 
 	}
 }
