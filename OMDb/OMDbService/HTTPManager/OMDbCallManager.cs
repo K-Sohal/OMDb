@@ -25,7 +25,5 @@ namespace OMDb
 			return _client.Execute(request, Method.GET).Content;
 		}
 
-
-
 	}
 }

@@ -7,16 +7,16 @@ namespace OMDb
 	public class SearchByTitle
 	{
 
-		//[TestCase("Game of Thrones", "2011", "1", "1", "Series")]
-		//[TestCase("Game of Thrones", "2011", "1", "1", "")]
-		//[TestCase("Game of Thrones", "2011", "1", "", "")]
-		//[TestCase("Game of Thrones", "2011", "", "", "")]
-		//[TestCase("Game of Thrones", "", "", "", "")]
-		//public void WebCallSuccessCheckForEachCorrectParameter(string title, string year, string season, string episode, string type)
-		//{
-		//	Service _movie = new Service(title, year, season, episode, type);
-		//	Assert.That(_movie.DTO.movieInformation.Response);
-		//}
+		[TestCase("Game of Thrones", "2011", "1", "1", "Series")]
+		[TestCase("Game of Thrones", "2011", "1", "1", "")]
+		[TestCase("Game of Thrones", "2011", "1", "", "")]
+		[TestCase("Game of Thrones", "2011", "", "", "")]
+		[TestCase("Game of Thrones", "", "", "", "")]
+		public void WebCallSuccessCheckForEachCorrectParameter(string title, string year, string season, string episode, string type)
+		{
+			Service _movie = new Service(title, year, season, episode, type);
+			Assert.That(_movie.DTO.movieInformation.Response);
+		}
 
 		[Test]
 		public void ReturnsFalseResponseAndErrorWhenInvalidEpisode()
@@ -50,6 +50,5 @@ namespace OMDb
 			Assert.That(_movie.DTO.movieInformation.Error, Is.Not.Empty);
 		}
 
-		
 	}
 }

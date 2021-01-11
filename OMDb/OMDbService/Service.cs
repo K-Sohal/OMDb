@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using System.Linq;
 
 namespace OMDb
 {
@@ -19,6 +20,7 @@ namespace OMDb
 
 			DTO.DeserializeRates(Movie);
 		}
+
 
 		public Service(string iMDbID)
 		{
