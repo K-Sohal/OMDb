@@ -21,7 +21,6 @@ namespace OMDb
 			DTO.DeserializeRates(Movie);
 		}
 
-
 		public Service(string iMDbID)
 		{
 			Movie = OMDbCallManager.GetMovieByID(iMDbID);

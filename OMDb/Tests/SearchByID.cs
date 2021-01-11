@@ -79,6 +79,5 @@ namespace OMDb
 		{
 			Assert.That(_movie.DTO.movieInformation.GetType().GetProperties().TakeWhile(x => x !=  null), Has.Exactly(26).Items);
 		}
-
 	}
 }

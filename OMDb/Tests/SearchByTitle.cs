@@ -6,7 +6,6 @@ namespace OMDb
 	
 	public class SearchByTitle
 	{
-
 		[TestCase("Game of Thrones", "2011", "1", "1", "Series")]
 		[TestCase("Game of Thrones", "2011", "1", "1", "")]
 		[TestCase("Game of Thrones", "2011", "1", "", "")]
@@ -49,6 +48,5 @@ namespace OMDb
 			Assert.That(!(_movie.DTO.movieInformation.Response));
 			Assert.That(_movie.DTO.movieInformation.Error, Is.Not.Empty);
 		}
-
 	}
 }
