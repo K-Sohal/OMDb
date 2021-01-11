@@ -1,8 +1,5 @@
 ﻿using System;
-<<<<<<< HEAD
-=======
 using System.Linq;
->>>>>>> dev
 using NUnit.Framework;
 
 namespace OMDb
@@ -41,8 +38,6 @@ namespace OMDb
 			Assert.That(_movie.DTO.movieInformation.Year, Is.EqualTo("2010"));
 		}
 
-<<<<<<< HEAD
-=======
 		[Test]
 		public void DirectorIsEqualToWriter()
 		{
@@ -84,7 +79,5 @@ namespace OMDb
 		{
 			Assert.That(_movie.DTO.movieInformation.GetType().GetProperties().TakeWhile(x => x !=  null), Has.Exactly(26).Items);
 		}
->>>>>>> dev
-
 	}
 }
