@@ -2,7 +2,7 @@
 
 namespace OMDb
 {
-	public class MovieInformation
+	public class Model
 	{
 		public string Title { get; set; }
 		public string Year { get; set; }

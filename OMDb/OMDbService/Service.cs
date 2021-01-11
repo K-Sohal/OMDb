@@ -1,5 +1,9 @@
 ﻿using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+<<<<<<< HEAD
+=======
+using System.Linq;
+>>>>>>> dev
 
 namespace OMDb
 {
@@ -20,6 +24,10 @@ namespace OMDb
 			DTO.DeserializeRates(Movie);
 		}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 		public Service(string iMDbID)
 		{
 			Movie = OMDbCallManager.GetMovieByID(iMDbID);
