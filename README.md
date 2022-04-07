@@ -1,6 +1,6 @@
 # OMDb
 
-A test framework for a movie information service called ODMb API. 
+A test framework for a movie information service called OMDb API. 
 
 ## Usage
 
